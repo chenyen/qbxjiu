@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>first example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    .box {max-width: 1000px;margin: 0 auto;text-align: center;}
+    </style>
+</head>
+ 
+<body>
+    <div class="box">
+        <img class="img" data-original="img/img1.jpg" height="300" />
+        <img class="img" data-original="img/img2.jpg" height="300" />
+        <img class="img" data-original="img/img3.jpg" height="300" />
+        <img class="img" data-original="img/img4.jpg" height="300" />
+        <img class="img" data-original="img/img5.jpg" height="300" />
+        <img class="img" data-original="img/img6.jpg" height="300" />
+        <img class="img" data-original="img/img7.jpg" height="300" />
+        <img class="img" data-original="img/img8.jpg" height="300" />
+        <img class="img" data-original="img/img9.jpg" height="300" />
+        <img class="img" data-original="img/img10.jpg" height="300" />
+        <img class="img" data-original="img/img11.jpg" height="300" />
+        <img class="img" data-original="img/img12.jpg" height="300" />
+        <img class="img" data-original="img/img13.jpg" height="300" />
+        <img class="img" data-original="img/img14.jpg" height="300" />
+        <img class="img" data-original="img/img15.jpg" height="300" />
+        <img class="img" data-original="img/img16.jpg" height="300" />
+        <img class="img" data-original="img/img17.jpg" height="300" />
+        <img class="img" data-original="img/img18.jpg" height="300" />
+        <img class="img" data-original="img/img19.jpg" height="300" />
+        <img class="img" data-original="img/img20.jpg" height="300" />
+        <img class="img" data-original="img/img21.jpg" height="300" />
+        <img class="img" data-original="img/img22.jpg" height="300" />
+        <img class="img" data-original="img/img23.jpg" height="300" />
+        <img class="img" data-original="img/img24.jpg" height="300" />
+        <img class="img" data-original="img/img25.jpg" height="300" />
+        <img class="img" data-original="img/img26.jpg" height="300" />
+        <img class="img" data-original="img/img27.jpg" height="300" />
+        <img class="img" data-original="img/img28.jpg" height="300" />
+        <img class="img" data-original="img/img29.jpg" height="300" />
+        <img class="img" data-original="img/img30.jpg" height="300" />
+    </div>
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script>
+    $("img.img").lazyload({
+        threshold : 0,                     //代表页面高度.如设置为200,表示滚动条在离目标位置还有200的高度时就开始加载图片,可以做到不让用户察觉
+        placeholder : "img/loading.gif",    //为某一图片路径.此图片用来占据将要加载的图片的位置,待图片加载时,占位图则会隐藏
+        event : "click",                 //设置自定事件来触发加载图片事件
+        effect : "fadeIn"                   //加载使用的动画效果,有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
+    });
+    </script>
+</body>
+ 
+</html>
+
+
+
+
+
+
+
+
+
+
